@@ -168,9 +168,9 @@ a {
 
   text-align: center;
   color: #a9a9a9;
-  width: 80vw;
+  width: 100vw;
   height: 2.5rem;
-  padding: 2px;
+ 
 }
 /* Modern mobile Devices */
 @media all and (max-width: 480px) {
