@@ -158,8 +158,8 @@ a {
 /* Footer  */
 
 #footer {
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+padding: 20px;
 
   font-style: normal;
   font-weight: 500;
