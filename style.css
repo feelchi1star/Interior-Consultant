@@ -159,9 +159,8 @@ a {
 
 #footer {
   position: absolute;
-bottom:0;
-left:0;
-  right:0;
+  bottom: 0;
+
   font-style: normal;
   font-weight: 500;
 
@@ -170,8 +169,7 @@ left:0;
   text-align: center;
   color: #a9a9a9;
   width: 100%;
-  height: auto;
-  padding-top: 40px;
+  height: 2.5rem;
 }
 /* Modern mobile Devices */
 @media all and (max-width: 480px) {
@@ -278,12 +276,26 @@ left:0;
 
   #footer {
     font-size: 14px;
-  margin: auto;}
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 /* Card height For Smaller devices */
 @media all and (max-width: 375px) {
+  body {
+    overflow: scroll;
+    margin: auto;
+  }
   .card {
     height: 20vh;
+    width: 70vw;
+  }
+  #footer {
+    position: sticky;
+    bottom: 0;
+    padding-top: 200px;
   }
 }
 /* Tablets */
