@@ -158,8 +158,8 @@ a {
 /* Footer  */
 
 #footer {
-  position: relative;
-padding: 20px;
+  position: absolute;
+bottom:0;
 
   font-style: normal;
   font-weight: 500;
@@ -276,7 +276,7 @@ padding: 20px;
 
   #footer {
     font-size: 14px;
-  }
+  margin: auto;}
 }
 /* Card height For Smaller devices */
 @media all and (max-width: 375px) {
