@@ -159,7 +159,7 @@ a {
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 
   font-style: normal;
   font-weight: 500;
