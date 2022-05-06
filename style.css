@@ -164,12 +164,13 @@ a {
   font-style: normal;
   font-weight: 500;
 
-  line-height: 17px;
+  line-height: 10px;
 
   text-align: center;
   color: #a9a9a9;
-  width: 100vw;
+  width: 80vw;
   height: 2.5rem;
+  padding: 2px;
 }
 /* Modern mobile Devices */
 @media all and (max-width: 480px) {
