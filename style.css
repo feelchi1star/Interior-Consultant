@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  #181719 */
+body {
+  background-color: #181719;
+  color: #fff;
+  font-family: "Montserrat";
+}
+/* Navbar */
+.Nav-section {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.Nav-text {
+  flex: 2;
+  margin-left: 77px;
+}
+.Logo-text {
+  border: #fff 2px solid;
+  width: 132px;
+  padding: 2px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  flex: 3;
+}
+
+.Nav-text,
+li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.a-active {
+  border-bottom: 2px solid #fff;
+  padding: 5px;
+}
+
+/* Collapse navbar */
+.lines {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+.menu {
+  /* display: ; */
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  display: none;
+}
+
+/* FLEX SHOWCASE  */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro {
+  flex: 1;
+  justify-self: center;
+  margin-left: 30px;
+  padding: 170px 80px;
+}
+.image {
+  flex: 2;
+  position: relative;
+}
+.intro-img {
+  max-width: 550px;
+  height: 450px;
+  padding-top: 100px;
+}
+
+/* Head Text */
+.head-text {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 61px;
+}
+.readmore {
+  padding-top: 2px;
+}
+
+.readmore > .material-icons {
+  align-self: center;
+}
+.read-section {
+  display: flex;
+  padding-top: 30px;
+  align-content: center;
+  align-self: center;
+}
+
+/* Card */
+.card {
+  display: flex;
+  align-items: flex-start;
+  height: 110px;
+  justify-content: stretch;
+  flex-direction: row;
+  background-color: #181719;
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.round-img {
+  border-radius: 50%;
+  width: 70px;
+  height: 40px;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.names {
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+.Info-text {
+  padding: 10px 0px 0px 20px;
+}
+.role {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.post {
+  padding-top: 12px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  width: 190px;
+}
+.close {
+  display: none;
+}
+
+/* Footer  */
+
+#footer {
+  position: absolute;
+  bottom: 0;
+
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 17px;
+
+  text-align: center;
+  color: #a9a9a9;
+  width: 100%;
+  height: 2.5rem;
+}
+/* Modern mobile Devices */
+@media all and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    top: 23px;
+    right: 15px;
+    position: absolute;
+  }
+
+  .Nav-section {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .Nav-text,
+  li {
+    display: block;
+
+    text-align: center;
+  }
+  .Nav-section {
+    height: 100%;
+    margin: auto;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    transition: 1s;
+  }
+  .Logo-text {
+    border: #fff 2px solid;
+    padding: 1px;
+    text-align: center;
+    height: 30px;
+  }
+  .Nav-text {
+    flex: 1;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .show-menu {
+    display: none;
+  }
+
+  .close {
+    font-size: 50px;
+    align-items: flex-end;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    display: block;
+  }
+  .flex {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .intro-img {
+    width: 100%;
+    padding: 12px;
+    height: 270px;
+  }
+  .card {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 14vh;
+    flex-direction: row;
+    background-color: #181719;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    /* width: 300px; */
+  }
+  .image {
+    position: relative;
+    flex: 0;
+  }
+  .intro-img {
+    padding-top: 0px;
+  }
+  .intro {
+    flex: 0;
+    justify-self: flex-start;
+    margin-left: 0px;
+    padding: 80px 30px 30px 30px;
+  }
+  .lead {
+    width: 300px;
+  }
+  .close {
+    display: none;
+  }
+
+  #footer {
+    font-size: 14px;
+  }
+}
+/* Card height For Smaller devices */
+@media all and (max-width: 375px) {
+  .card {
+    height: 20vh;
+  }
+}
+/* Tablets */
+@media (min-width: 481px) and (max-width: 992px) {
+  .Nav-text {
+    flex: 0;
+  }
+  ul {
+    flex: 4;
+  }
+  .intro {
+    padding: 20px;
+  }
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-img {
+    width: 100%;
+  }
+  .Nav-section {
+    flex-wrap: nowrap;
+  }
+  .card {
+    bottom: -20px;
+  }
+}

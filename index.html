@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Consultant Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <nav class="Nav-section">
+      <div class="Nav-text">
+        <div class="Logo-text">The Interior</div>
+        <div class="close">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+        </div>
+      </div>
+
+      <ul class="show-menu">
+        <li><a href="#" class="a-active">Home</a></li>
+        <li><a href="#"> Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <div class="intro">
+        <h2 class="head-text">Modern Interior</h2>
+        <p class="lead">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <div class="read-section">
+          <h5 class="readmore">Read more</h5>
+          <span class="material-icons"> arrow_right_alt </span>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          class="intro-img"
+          src="./img/Interior-Designer.jpg"
+          alt="Interior-Design"
+        />
+        <div class="card">
+          <img
+            class="round-img"
+            src="./img/F1s.jpg"
+            alt="Felix Chinonso Emmanuel"
+            class="card-img"
+          />
+          <div class="Info-text">
+            <h3 class="names">Felix Chinonso E.</h3>
+            <p class="role">Interior designer</p>
+            <div class="post">Designed in 2022 by Felix Chinonso E.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

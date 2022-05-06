@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Responsive</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: black;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: rgb(224, 35, 22);
+      display: flex;
+      color: #fff;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .nav-list {
+      list-style-type: none;
+    }
+    .list-item,
+    .nav-list {
+      display: inline-block;
+      padding: 20px 10px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .img {
+      height: 40px;
+    }
+    .lines {
+      width: 40px;
+      height: 3px;
+      background-color: #fff;
+      margin-bottom: 4px;
+    }
+    .menu {
+      display: none;
+    }
+    @media all and (max-width: 480px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+      }
+
+      .nav-list .list-item {
+        display: block;
+        padding-top: 10px 10px;
+        border-bottom: 1px solid #fff;
+      }
+      .nav-list {
+        width: 100%;
+        text-align: center;
+        display: none;
+      }
+      .icon {
+        width: 100%;
+      }
+      .img {
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+      .active {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="icon">
+        <a href="#"
+          ><img src="./img/photo2.png" class="img" alt="" srcset=""
+        /></a>
+      </div>
+      <ul class="nav-list">
+        <li class="list-item"><a href="#">Our Service</a></li>
+        <li class="list-item"><a href="#">About</a></li>
+        <li class="list-item"><a href="#">FAQ</a></li>
+        <li class="list-item"><a href="#">Address</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const nav = document.querySelector(".nav-list");
+    toggleButton.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</html>
